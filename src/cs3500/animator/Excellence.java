@@ -101,8 +101,6 @@ public final class Excellence {
         System.exit(0);
       }
 
-      System.out.println("before parsing");
-
       AnimationModel model = (AnimationModel) new AnimationReader().parseFile(file, builder);
 
       // start the animation

@@ -113,11 +113,6 @@ public class SimpleAnimationPlus extends SimpleAnimation implements AnimationMod
 
 
     Integer[] someList = this.frameTicks();
-
-    System.out.println("We are printing the discrete ticks");
-    for (int ii = 0; ii < someList.length; ii++) {
-      System.out.println(String.format("Discrete tick %d -> %d", ii, someList[ii]));
-    }
   }
 
   private boolean tempoOverlap() {
@@ -138,9 +133,6 @@ public class SimpleAnimationPlus extends SimpleAnimation implements AnimationMod
     int size = tempos.size();
 
     for (int ii = 0; ii < size; ii++) {
-      /*for (Integer[] tempo : tempos) {
-        System.out.println(String.format("start time: %d, end time %d", tempo[0], tempo[1]));
-      }*/
 
       Integer smallestStartTimeIdx = 0;
       for (Integer[] tempo : tempos) {
